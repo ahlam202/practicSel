@@ -1,5 +1,7 @@
 package PeopleNtech.Automationtraining;
 
+import java.time.Duration;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
@@ -14,7 +16,7 @@ public class BrowserWorking {
 	driver=new ChromeDriver();
 	driver.navigate().to("https://www.amazon.com/");
 	driver.manage().window().maximize();
-	Thread.sleep(6000);// thread is compailer
+	Thread.sleep(6000);// thread controlled by compailer
 	driver.navigate().refresh();
 	Thread.sleep(6000);
 	driver.navigate().back();
@@ -25,6 +27,7 @@ public class BrowserWorking {
 	System.out.println(windowhandle);
 	System.out.println(driver.getCurrentUrl());
 	driver.close();
+	
 	}
 
 }
