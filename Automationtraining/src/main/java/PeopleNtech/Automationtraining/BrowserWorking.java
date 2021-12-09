@@ -1,6 +1,7 @@
 package PeopleNtech.Automationtraining;
 
-import java.time.Duration;
+
+
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -12,7 +13,7 @@ public class BrowserWorking {
 	public static void main(String[] args) throws InterruptedException {
 		// TODO Auto-generated method stub
         // how to open the browser
-		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Admin\\eclipse-workspace\\Automationtraining\\src\\Drivers\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver","C:\\Users\\Admin\\git\\repository\\Automationtraining\\src\\Drivers\\chromedriver.exe");
 	driver=new ChromeDriver();
 	driver.navigate().to("https://www.amazon.com/");
 	driver.manage().window().maximize();
@@ -26,6 +27,7 @@ public class BrowserWorking {
 	String windowhandle=driver.getWindowHandle();
 	System.out.println(windowhandle);
 	System.out.println(driver.getCurrentUrl());
+	
 	driver.close();
 	
 	}
